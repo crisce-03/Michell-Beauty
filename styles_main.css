@@ -1,0 +1,78 @@
+h2{
+    text-align: center;
+    font-family: "Sofia";
+    font-size: 50px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.card_conteiner{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card_conteiner .card{
+    position: relative;
+    max-width: 300px;
+    height: 200px;
+    background-color: #000;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0,5);
+    transition: 0.3s ease-in-out;
+
+}
+
+.card_conteiner .card:hover{
+    height: 350px;
+}
+
+.card_conteiner .card .imgBox{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    top: -60px;
+    left: 27.5px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,5);
+}
+
+.card_conteiner .card .imgBox img{
+    
+    border-radius: 4px;
+    width: 100%;
+    
+
+}
+
+.card_conteiner .card .content_card{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+
+}
+
+.card_conteiner .card:hover .content_card{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -80px;
+    transition-delay: 0.3s;
+}
