@@ -27,7 +27,7 @@ header{
     border-radius: 50%; /* Ajusta el radio para bordes redondeados */
     box-shadow: 0 0 10px #7e6128; /* Efecto brillante */
     animation: glow 1.5s infinite alternate; 
-    max-width: 100%;
+    max-width: 75%;
 }
 @keyframes glow {
     from {
