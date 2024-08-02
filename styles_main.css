@@ -50,11 +50,22 @@ section{
 }
 
 .card_conteiner .card .imgBox img{
-    
+       
     border-radius: 4px;
     width: 100%;
-    
 
+}
+
+@media (min-width: 600px) {
+    .card_conteiner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .card_conteiner {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .card_conteiner .card .content_card{
