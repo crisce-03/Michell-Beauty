@@ -1,0 +1,44 @@
+.location{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.title-location{
+    color: white;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+}
+
+.location-info{
+    display: flex;
+}
+
+.local{
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    overflow: hidden;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .local {
+      height: 50vh; 
+    }
+  }
+
+.local video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ubicacion{
+    width: 100%;
+}
+
