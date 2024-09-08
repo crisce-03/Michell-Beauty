@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sofia&display=swap" rel="stylesheet">
 
     <script defer src="script.js"></script>
+    <script defer src="fuction_img.js"></script>
 </head>
 <body>
 
@@ -156,11 +157,17 @@
     
                 <div class="location-info">
                     <div class="local">
-                        <video autoplay loop muted playsinline>
-                            <source src="src/local.mp4">
+                        <video id="video-peq" onclick="openFullScreenVideo()" loop muted autoplay playsinline>
+                            <source src="src/local.mp4" type="video/mp4">
                         </video>
                     </div>
-    
+                    
+                    <div id="fullScreenOverlay" class="overlay" onclick="closeFullScreenVideo()">
+                        <video id="fullscreenVideo" class="fullscreen-video" controls>
+                            <source src="src/local.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
                     <div class="ubicacion">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3871.3308046897137!2d-89.55518602490523!3d13.998388886419729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDU5JzU0LjIiTiA4OcKwMzMnMDkuNCJX!5e0!3m2!1ses-419!2ssv!4v1725576428456!5m2!1ses-419!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
